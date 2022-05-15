@@ -1,0 +1,18 @@
+{
+    "name": "ssnepenthe/wp-latitude-bridge",
+    "require": {
+        "latitude/latitude": "^4.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "files": ["src/functions.php"],
+        "psr-4": {
+            "WpLatitudeBridge\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "friendsofphp/php-cs-fixer": "^3.8",
+        "symfony/var-dumper": "^6.0"
+    }
+}
