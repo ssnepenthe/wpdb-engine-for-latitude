@@ -34,7 +34,7 @@ class FunctionsTest extends TestCase
 
         $statement = $this->getStatement($builder);
 
-        $this->assertSame('"total"', $statement->sql($this->engine));
+        $this->assertSame('`total`', $statement->sql($this->engine));
         $this->assertSame([], $statement->params($this->engine));
     }
 
@@ -69,7 +69,7 @@ class FunctionsTest extends TestCase
 
         $statement = $this->getStatement($builder);
 
-        $this->assertSame('"first_name"', $statement->sql($this->engine));
+        $this->assertSame('`first_name`', $statement->sql($this->engine));
         $this->assertSame([], $statement->params($this->engine));
     }
 

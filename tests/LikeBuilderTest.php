@@ -23,7 +23,7 @@ class LikeBuilderTest extends TestCase
     {
         $criteria = $this->likeBuilder->begins('john');
 
-        $this->assertSame('"first_name" LIKE %s', $criteria->sql($this->engine));
+        $this->assertSame('`first_name` LIKE %s', $criteria->sql($this->engine));
         $this->assertSame(['john%'], $criteria->params($this->engine));
     }
 
@@ -31,7 +31,7 @@ class LikeBuilderTest extends TestCase
     {
         $criteria = $this->likeBuilder->notBegins('john');
 
-        $this->assertSame('"first_name" NOT LIKE %s', $criteria->sql($this->engine));
+        $this->assertSame('`first_name` NOT LIKE %s', $criteria->sql($this->engine));
         $this->assertSame(['john%'], $criteria->params($this->engine));
     }
 
@@ -39,7 +39,7 @@ class LikeBuilderTest extends TestCase
     {
         $criteria = $this->likeBuilder->contains('john');
 
-        $this->assertSame('"first_name" LIKE %s', $criteria->sql($this->engine));
+        $this->assertSame('`first_name` LIKE %s', $criteria->sql($this->engine));
         $this->assertSame(['%john%'], $criteria->params($this->engine));
     }
 
@@ -47,7 +47,7 @@ class LikeBuilderTest extends TestCase
     {
         $criteria = $this->likeBuilder->notContains('john');
 
-        $this->assertSame('"first_name" NOT LIKE %s', $criteria->sql($this->engine));
+        $this->assertSame('`first_name` NOT LIKE %s', $criteria->sql($this->engine));
         $this->assertSame(['%john%'], $criteria->params($this->engine));
     }
 
@@ -55,7 +55,7 @@ class LikeBuilderTest extends TestCase
     {
         $criteria = $this->likeBuilder->ends('john');
 
-        $this->assertSame('"first_name" LIKE %s', $criteria->sql($this->engine));
+        $this->assertSame('`first_name` LIKE %s', $criteria->sql($this->engine));
         $this->assertSame(['%john'], $criteria->params($this->engine));
     }
 
@@ -63,7 +63,7 @@ class LikeBuilderTest extends TestCase
     {
         $criteria = $this->likeBuilder->notEnds('john');
 
-        $this->assertSame('"first_name" NOT LIKE %s', $criteria->sql($this->engine));
+        $this->assertSame('`first_name` NOT LIKE %s', $criteria->sql($this->engine));
         $this->assertSame(['%john'], $criteria->params($this->engine));
     }
 }

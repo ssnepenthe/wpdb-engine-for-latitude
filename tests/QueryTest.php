@@ -29,7 +29,7 @@ class QueryTest extends TestCase
         $expression = $query->asExpression();
 
         $this->assertSame(
-            'INSERT INTO "places" ("name", "address") VALUES (%s, %s)',
+            'INSERT INTO `places` (`name`, `address`) VALUES (%s, %s)',
             $expression->sql($this->engine)
         );
         $this->assertSame(['home', '123 Main St'], $expression->params($this->engine));
@@ -43,7 +43,7 @@ class QueryTest extends TestCase
 
         $expression = $query->asExpression();
 
-        $this->assertSame('UPDATE "places" SET "address" = %s', $expression->sql($this->engine));
+        $this->assertSame('UPDATE `places` SET `address` = %s', $expression->sql($this->engine));
         $this->assertSame(['555 Money Ave'], $expression->params($this->engine));
     }
 }

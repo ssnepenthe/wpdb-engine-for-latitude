@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace WpLatitudeBridge;
 
-use Latitude\QueryBuilder\Engine\CommonEngine;
+use Latitude\QueryBuilder\Engine\MySqlEngine;
 use Latitude\QueryBuilder\Query\InsertQuery as LatitudeInsertQuery;
 use Latitude\QueryBuilder\Query\UpdateQuery as LatitudeUpdateQuery;
 
-class WpdbEngine extends CommonEngine
+class WpdbEngine extends MySqlEngine
 {
     public function makeUpdate(): LatitudeUpdateQuery
     {
