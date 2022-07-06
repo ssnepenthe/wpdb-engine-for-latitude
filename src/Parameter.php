@@ -10,7 +10,7 @@ use Latitude\QueryBuilder\StatementInterface;
 
 final class Parameter implements StatementInterface
 {
-    /** @var string */
+    /** @var bool|string|null */
     private $sql = '';
 
     /** @var array */
