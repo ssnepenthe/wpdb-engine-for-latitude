@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace WpdbEngineForLatitude;
 
 use Latitude\QueryBuilder\StatementInterface;

@@ -6,8 +6,8 @@ namespace WpdbEngineForLatitude;
 
 use Latitude\QueryBuilder\Query\InsertQuery as LatitudeInsertQuery;
 
-use function Latitude\QueryBuilder\listing;
 use function Latitude\QueryBuilder\express;
+use function Latitude\QueryBuilder\listing;
 
 class InsertQuery extends LatitudeInsertQuery
 {

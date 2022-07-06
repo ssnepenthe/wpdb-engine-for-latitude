@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace WpdbEngineForLatitude\Tests;
 
 use Latitude\QueryBuilder\QueryFactory;
