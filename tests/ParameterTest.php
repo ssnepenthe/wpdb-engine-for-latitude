@@ -66,8 +66,8 @@ class ParameterTest extends TestCase
 
     public function testUnsupportedType()
     {
-        // @todo
         $this->expectException(InvalidArgumentException::class);
+        $this->expectExceptionMessage('must be one of bool|float|int|string|null');
 
         new Parameter(new stdClass());
     }

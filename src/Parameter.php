@@ -28,7 +28,13 @@ final class Parameter implements StatementInterface
             } elseif (is_float($value)) {
                 $this->sql = '%f';
             } else {
-                throw new InvalidArgumentException('@todo');
+                $supportedTypes = ['bool', 'float', 'int', 'string', 'null'];
+
+                throw new InvalidArgumentException(sprintf(
+                    'Parameter of type %s not supported - must be one of %s',
+                    gettype($value),
+                    implode('|', $supportedTypes)
+                ));
             }
 
             $this->params[] = $value;
