@@ -19,7 +19,7 @@ final class Parameter implements StatementInterface
     public function __construct($value)
     {
         if (is_bool($value) || is_null($value)) {
-            $this->sql = var_export($value, true);
+            $this->sql = $value;
         } else {
             if (is_string($value)) {
                 $this->sql = '%s';
@@ -37,7 +37,7 @@ final class Parameter implements StatementInterface
 
     public function sql(EngineInterface $engine): string
     {
-        return $this->sql;
+        return $engine->exportParameter($this->sql);
     }
 
     public function params(EngineInterface $engine): array
