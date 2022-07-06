@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace WpdbEngineForLatitude;
 
-use Latitude\QueryBuilder\Query\InsertQuery as LatitudeInsertQuery;
+use Latitude\QueryBuilder\Query\MySql\InsertQuery as LatitudeInsertQuery;
 
 use function Latitude\QueryBuilder\express;
 use function Latitude\QueryBuilder\listing;
