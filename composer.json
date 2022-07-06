@@ -1,5 +1,6 @@
 {
     "name": "ssnepenthe/wpdb-engine-for-latitude",
+    "description": "Build queries for wpdb using the latitude query builder",
     "license": "MIT",
     "require": {
         "php": "^7.4 || ^8.0",
