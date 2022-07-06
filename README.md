@@ -1,4 +1,4 @@
-# wp-latitude-bridge
+# wpdb-engine-for-latitude
 
 Use the [latitude](https://github.com/shadowhand/latitude) query builder to build queries for use in `wpdb`.
 
@@ -18,17 +18,17 @@ The engine provided to the query factory should always be an instance of `WpdbEn
 
 ```php
 use Latitude\QueryBuilder\QueryFactory;
-use WpLatitudeBridge\WpdbEngine;
+use WpdbEngineForLatitude\WpdbEngine;
 
 $factory = new QueryFactory(new WpdbEngine());
 ```
 
 ### Field Function
 
-In place of the `Latitude\QueryBuilder\field()` function, use `WpLatitudeBridge\field()`:
+In place of the `Latitude\QueryBuilder\field()` function, use `WpdbEngineForLatitude\field()`:
 
 ```php
-use function WpLatitudeBridge\field;
+use function WpdbEngineForLatitude\field;
 
 $query = $factory
     ->select('id', 'username')
@@ -39,10 +39,10 @@ $query = $factory
 
 ### Search Function
 
-In place of the `Latitude\QueryBuilder\search()` function, use `WpLatitudeBridge\search()`:
+In place of the `Latitude\QueryBuilder\search()` function, use `WpdbEngineForLatitude\search()`:
 
 ```php
-use function WpLatitudeBridge\search;
+use function WpdbEngineForLatitude\search;
 
 $query = $factory
     ->select()

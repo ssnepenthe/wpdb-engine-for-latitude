@@ -1,12 +1,12 @@
 <?php
 
-namespace WpLatitudeBridge\Tests;
+namespace WpdbEngineForLatitude\Tests;
 
 use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
 use stdClass;
-use WpLatitudeBridge\Parameter;
-use WpLatitudeBridge\WpdbEngine;
+use WpdbEngineForLatitude\Parameter;
+use WpdbEngineForLatitude\WpdbEngine;
 
 class ParameterTest extends TestCase
 {

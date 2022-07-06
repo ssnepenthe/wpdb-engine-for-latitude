@@ -1,15 +1,15 @@
 <?php
 
-namespace WpLatitudeBridge\Tests;
+namespace WpdbEngineForLatitude\Tests;
 
 use Latitude\QueryBuilder\QueryFactory;
 use PHPUnit\Framework\TestCase;
-use WpLatitudeBridge\WpdbEngine;
+use WpdbEngineForLatitude\WpdbEngine;
 
 use function Latitude\QueryBuilder\alias;
 use function Latitude\QueryBuilder\func;
 use function Latitude\QueryBuilder\on;
-use function WpLatitudeBridge\field;
+use function WpdbEngineForLatitude\field;
 
 /**
  * @see https://developer.wordpress.org/reference/classes/wpdb/#common-tasks

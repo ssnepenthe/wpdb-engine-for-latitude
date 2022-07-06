@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace WpLatitudeBridge;
+namespace WpdbEngineForLatitude;
 
 use Latitude\QueryBuilder\EngineInterface;
 use Latitude\QueryBuilder\StatementInterface;

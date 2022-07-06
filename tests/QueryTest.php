@@ -1,11 +1,11 @@
 <?php
 
-namespace WpLatitudeBridge\Tests;
+namespace WpdbEngineForLatitude\Tests;
 
 use PHPUnit\Framework\TestCase;
-use WpLatitudeBridge\InsertQuery;
-use WpLatitudeBridge\UpdateQuery;
-use WpLatitudeBridge\WpdbEngine;
+use WpdbEngineForLatitude\InsertQuery;
+use WpdbEngineForLatitude\UpdateQuery;
+use WpdbEngineForLatitude\WpdbEngine;
 
 class QueryTest extends TestCase
 {

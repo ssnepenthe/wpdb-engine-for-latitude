@@ -1,12 +1,12 @@
 <?php
 
-namespace WpLatitudeBridge\Tests;
+namespace WpdbEngineForLatitude\Tests;
 
 use PHPUnit\Framework\TestCase;
-use WpLatitudeBridge\LikeBegins;
-use WpLatitudeBridge\LikeContains;
-use WpLatitudeBridge\LikeEnds;
-use WpLatitudeBridge\WpdbEngine;
+use WpdbEngineForLatitude\LikeBegins;
+use WpdbEngineForLatitude\LikeContains;
+use WpdbEngineForLatitude\LikeEnds;
+use WpdbEngineForLatitude\WpdbEngine;
 
 class LikeTest extends TestCase
 {

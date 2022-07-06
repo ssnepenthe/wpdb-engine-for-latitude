@@ -1,8 +1,6 @@
 <?php
 
-// @todo Add Tests
-
-namespace WpLatitudeBridge;
+namespace WpdbEngineForLatitude;
 
 use Latitude\QueryBuilder\StatementInterface;
 

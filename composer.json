@@ -1,5 +1,5 @@
 {
-    "name": "ssnepenthe/wp-latitude-bridge",
+    "name": "ssnepenthe/wpdb-engine-for-latitude",
     "require": {
         "php": "^7.4 || ^8.0",
         "latitude/latitude": "^4.0"
@@ -8,7 +8,7 @@
     "autoload": {
         "files": ["src/functions.php"],
         "psr-4": {
-            "WpLatitudeBridge\\": "src/"
+            "WpdbEngineForLatitude\\": "src/"
         }
     },
     "require-dev": {

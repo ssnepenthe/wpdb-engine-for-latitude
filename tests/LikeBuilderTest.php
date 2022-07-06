@@ -1,10 +1,10 @@
 <?php
 
-namespace WpLatitudeBridge\Tests;
+namespace WpdbEngineForLatitude\Tests;
 
 use PHPUnit\Framework\TestCase;
-use WpLatitudeBridge\LikeBuilder;
-use WpLatitudeBridge\WpdbEngine;
+use WpdbEngineForLatitude\LikeBuilder;
+use WpdbEngineForLatitude\WpdbEngine;
 
 use function Latitude\QueryBuilder\identify;
 

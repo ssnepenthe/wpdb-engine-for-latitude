@@ -1,21 +1,21 @@
 <?php
 
-namespace WpLatitudeBridge\Tests;
+namespace WpdbEngineForLatitude\Tests;
 
 use InvalidArgumentException;
 use Latitude\QueryBuilder\Builder\CriteriaBuilder as LatitudeCriteriaBuilder;
 use Latitude\QueryBuilder\Builder\LikeBuilder as LatitudeLikeBuilder;
 use PHPUnit\Framework\TestCase;
 use ReflectionProperty;
-use WpLatitudeBridge\CriteriaBuilder;
-use WpLatitudeBridge\LikeBuilder;
-use WpLatitudeBridge\Parameter;
-use WpLatitudeBridge\WpdbEngine;
+use WpdbEngineForLatitude\CriteriaBuilder;
+use WpdbEngineForLatitude\LikeBuilder;
+use WpdbEngineForLatitude\Parameter;
+use WpdbEngineForLatitude\WpdbEngine;
 
-use function WpLatitudeBridge\field;
-use function WpLatitudeBridge\param;
-use function WpLatitudeBridge\paramAll;
-use function WpLatitudeBridge\search;
+use function WpdbEngineForLatitude\field;
+use function WpdbEngineForLatitude\param;
+use function WpdbEngineForLatitude\paramAll;
+use function WpdbEngineForLatitude\search;
 
 class FunctionsTest extends TestCase
 {
