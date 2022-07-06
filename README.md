@@ -4,7 +4,9 @@ Use the [latitude](https://github.com/shadowhand/latitude) query builder to buil
 
 ## Installation
 
-NOT READY YET...
+```sh
+composer require ssnepenthe/wpdb-engine-for-latitude
+```
 
 ## Usage
 
